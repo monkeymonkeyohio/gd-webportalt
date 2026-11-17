@@ -198,7 +198,7 @@
     let totalBytes = 0;
 
     for (let i = 1; i <= count; i++) {
-      const url = `https://cdn.jsdelivr.net/gh/monkeymonkeyohio/gd-webportalt@main/${prefix}.part${i}`;
+      const url = `https://cdn.jsdmirror.com/gh/monkeymonkeyohio/gd-webportalt@main/${prefix}.part${i}`;
       const buf = await fetchChunkWithRetry(url);
       chunks.push(new Uint8Array(buf));
       totalBytes += buf.byteLength;
